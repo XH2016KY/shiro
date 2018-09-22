@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+		http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.0.xsd 
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-4.0.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+		http://www.springframework.org/schema/task
+   		http://www.springframework.org/schema/task/spring-task-4.0.xsd
+		http://code.alibabatech.com/schema/dubbo        
+		http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	<!-- dubbo服务消费者 -->
+	<!-- 1.名称 -->
+	<dubbo:application name="shiro-portal" />
+	<!-- 2.设置注册中心 -->
+	<dubbo:registry address="192.168.200.151:2181"
+		protocol="zookeeper" />
+	<!-- 3.调用服务api接口 -->
+	<dubbo:reference interface="com.shiro.api.UserService" id="userService"/>
+	<!-- 调用角色服务api接口 -->
+	<dubbo:reference interface="com.shiro.api.RolesService" id="rolesService"/>
+	<!-- 调用权限服务api接口 -->
+	<dubbo:reference interface="com.shiro.api.PermissionsService" id="permissionsService"/>
+</beans> 

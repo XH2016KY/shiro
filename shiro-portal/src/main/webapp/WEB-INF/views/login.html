@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="./resource/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript"
+	src="./resource/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="./resource/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+	<!-- 表格样式 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md=6">
+				<table
+					class="table table-striped table-bordered table-hover table-condensed 
+                            table-responsive">
+					<tr class="active">
+						<td>部门编号</td>
+						<td>部门名称</td>
+						<td>部门位置</td>
+					</tr>
+					<tr class="success">
+						<td>10</td>
+						<td>研发部</td>
+						<td>上海</td>
+					</tr>
+					<tr class="info">
+						<td>20</td>
+						<td>销售部</td>
+						<td>成都</td>
+					</tr>
+					<tr class="warning">
+						<td>20</td>
+						<td>销售部</td>
+						<td>成都</td>
+					</tr>
+					<tr class="danger">
+						<td>20</td>
+						<td>销售部</td>
+						<td>成都</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<!-- 表单 -->
+		<!-- form-inline 表单横向表示 -->
+		<!-- form-control 表单框方圆 -->
+		<form action="" class="form-horizontal"><!-- class="form-inline" -->
+			<fieldset>
+				<legend>信息提示表单</legend>
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="uid">用户名:<span class="glyphicon glyphicon-user"></label> 
+					<div class="col-md-5">
+					<input type="text" id="uid" name="uid" class="form-control" style="border-color:green" placeholder="请输入用户名"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="u">密&nbsp;&nbsp;&nbsp;&nbsp;码:</label> 
+					<div class="col-md-5">
+					<input type="password" id="u" name="u" class="form-control" placeholder="请输入密码"/>
+					</div>
+				</div>
+				<div class="form-group">
+				     <div class="col-md-5 col-md-offset-2">
+				          <button type="submit">登陆</button>
+				          <button type="reset">重置</button>
+				     </div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<!-- 文本表单 -->
+	<div class="container">
+		<!-- 表单 -->
+		<!-- form-inline 表单横向表示 -->
+		<!-- form-control 表单框方圆 -->
+		<form action="" class="form-horizontal"><!-- class="form-inline" -->
+			<fieldset>
+				<legend>文本表单</legend>
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="title">新闻评论:</label> 
+					<div class="col-md-5">
+					<input type="text" id="title" name="title" class="form-control" placeholder="请输入评论标题"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="note">内&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;容:</label> 
+					<div class="col-md-5">
+					   <textarea class="form-control " id="note" name="note" rows="3" cols="30"
+					   placeholder="请输入内容" style="resize:none;"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+				     <div class="col-md-5 col-md-offset-3">
+				          <button type="submit" class="btn btn-primary">登陆</button>
+				          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				          <button type="reset" class="btn btn-warning">重置</button>
+				     </div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<!-- 下拉列表 -->
+	<div class="container">
+		<!-- 表单 -->
+		<!-- form-inline 表单横向表示 -->
+		<!-- form-control 表单框方圆 -->
+		<form action="" class="form-horizontal"><!-- class="form-inline" -->
+			<fieldset>
+				<legend>用户住址:</legend>
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="province">省份</label> 
+					<div class="col-md-3">
+					<select id="province" name="province" class="form-control">
+					          <option value="001">北京</option>
+					          <option value="001">上海</option>
+					          <option value="001">南京</option>
+					</select>
+					</div>
+				<!-- </div>
+				<div class="form-group"> -->
+					<label class="col-md-2 control-label" for="city">城市</label> 
+					<div class="col-md-3">
+					<select id="city" name="city"  class="form-control">
+					          <option value="001">南充市</option>
+					          <option value="001">巴中市</option>
+					          <option value="001">内江市</option>
+					</select>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<!-- 单选按钮 -->
+	<div class="container">
+		<!-- 表单 -->
+		<!-- form-inline 表单横向表示 -->
+		<!-- form-control 表单框方圆 -->
+		<form action="" class="form-horizontal"><!-- class="form-inline" -->
+			<fieldset>
+				<legend>信息提示表单</legend>
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="uid">用户名:</label> 
+					<div class="col-md-5">
+					<input type="text" id="uid" name="uid" class="form-control" placeholder="请输入用户名"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="u">技&nbsp;&nbsp;&nbsp;&nbsp;能:</label> 
+					<div class="col-md-5">
+					     <div class="checkbox-inline">
+					           <label><input type="checkbox" name="skill" id="skill"
+					           value="pro" checked="checked"/>编程开发</label>
+					    </div>
+					    <div class="checkbox-inline">
+					           <label><input type="checkbox" name="skill" id="skill"
+					           value="db" />数据库开发</label>
+					     </div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-2 control-label" for="u">性&nbsp;&nbsp;&nbsp;&nbsp;别:</label> 
+					<div class="col-md-5">
+					     <div class="radio-inline">
+					           <label><input type="radio" name="sex" id="sex"
+					           value="男" checked="checked"/>男</label>
+					    </div>
+					    <div class="radio-inline">
+					           <label><input type="radio" name="sex" id="sex"
+					           value="女" checked=""/>女</label>
+					     </div>
+					</div>
+				</div>
+				<div class="form-group">
+				     <div class="col-md-5 col-md-offset-2">
+				          <button type="submit">登陆</button>
+				          <button type="reset">重置</button>
+				     </div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
