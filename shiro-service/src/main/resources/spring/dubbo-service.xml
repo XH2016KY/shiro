@@ -23,7 +23,7 @@
 	<!-- 1.名称 -->
 	<dubbo:application name="shiro-service"/>
 	<!-- 2.设置注册中心 -->
-	<dubbo:registry address="192.168.200.151:2181" protocol="zookeeper"/>
+	<dubbo:registry address="192.168.200.151:2181,192.168.200.153:2181,192.168.200.150:2181" protocol="zookeeper"/>
 	<!-- 3.设置端口号 -->
 	<dubbo:protocol port="20880" name="dubbo"/>
 	<!-- 4.用户服务接口api -->

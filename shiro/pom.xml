@@ -205,9 +205,6 @@
 		<module>../../../Desktop/web-flux/shiro-module</module>
 		<module>../../../Desktop/web-flux/shiro-portal</module>
 		<module>../../../Desktop/web-flux/shiro-service</module>
-
-
-
 		<module>../../../Desktop/web-flux/shiro-swagger</module>
 	</modules>
 </project>
